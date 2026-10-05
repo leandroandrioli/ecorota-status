@@ -1,31 +1,23 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Nome da sua Status Page e do seu projeto
+owner: seu-usuario-github
+repo: ecorota-status
 
+# Configurações do site de status
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: API Backend Ecorota
+    url: https://sua-api.onrender.com/api/v1/health # Substitua pela sua URL
+    icon: https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f33f.svg # Ícone opcional
 
+  - name: Aplicação Web (Frontend)
+    url: https://ecorota.vercel.app # Substitua pela URL do seu Frontend
+
+# Configurações de notificação e estilo
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+  cname: status.seu-dominio.com # (Opcional) remova esta linha se não usar domínio próprio
+  logoUrl: https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f30d.svg
+  name: Status Ecorota
+  introTitle: "Página de Monitoramento do Projeto Ecorota"
+  introMessage: "Status em tempo real do ecossistema e serviços da solução Ecorota."
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Frequência de teste (padrão de 5 em 5 minutos)
+workflowDispatch: true
