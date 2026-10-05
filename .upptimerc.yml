@@ -1,23 +1,19 @@
-# Nome da sua Status Page e do seu projeto
-owner: seu-usuario-github
+owner: leandroandrioli
 repo: ecorota-status
 
-# Configurações do site de status
 sites:
-  - name: API Backend Ecorota
-    url: https://sua-api.onrender.com/api/v1/health # Substitua pela sua URL
-    icon: https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f33f.svg # Ícone opcional
+  - name: EcoRota Paranaguá (Aplicação Web)
+    url: https://leandroandrioli.github.io/ecorota/
+    icon: https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f33f.svg
 
-  - name: Aplicação Web (Frontend)
-    url: https://ecorota.vercel.app # Substitua pela URL do seu Frontend
-
-# Configurações de notificação e estilo
 status-website:
-  cname: status.seu-dominio.com # (Opcional) remova esta linha se não usar domínio próprio
   logoUrl: https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f30d.svg
-  name: Status Ecorota
-  introTitle: "Página de Monitoramento do Projeto Ecorota"
-  introMessage: "Status em tempo real do ecossistema e serviços da solução Ecorota."
+  name: Status EcoRota Paranaguá
+  introTitle: "Painel de Disponibilidade — EcoRota Paranaguá"
+  introMessage: "Acompanhamento em tempo real da disponibilidade e desempenho da aplicação EcoRota."
+  baseUrl: /ecorota-status
+  navbar:
+    - title: Acessar Aplicação
+      href: https://leandroandrioli.github.io/ecorota/
 
-# Frequência de teste (padrão de 5 em 5 minutos)
 workflowDispatch: true
